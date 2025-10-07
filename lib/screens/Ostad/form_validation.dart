@@ -28,7 +28,12 @@ class _MyPageState extends State<MyPage> {
               children: [
                 TextFormField(
                   decoration: InputDecoration(hintText: 'Phone Number'),
-                  validator: (value) => ,
+                  validator: (value){
+                    if(value == null || value.isEmpty)
+                    {
+                      return 'Please enter your phone number';
+                    }
+                  },
                 ),
               ],
             ),
