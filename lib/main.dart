@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:medicare/screens/Home/homepage.dart';
+import 'package:medicare/screens/Ostad/form_validation.dart';
 import 'package:medicare/screens/auth_screen/login_screen.dart';
-import 'package:medicare/screens/auth_screen/signup_screen.dart';
 import 'package:medicare/screens/auth_screen/test.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:medicare/screens/chatBot_screen.dart';
 import 'package:medicare/screens/splash_screen.dart';
 import 'package:medicare/screens/verify_screen/createNewPass_screen.dart';
 import 'package:medicare/screens/verify_screen/forgot_pass.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
       minTextAdapt: true,
       splitScreenMode: true,
       builder: (context, child) {
-        return MaterialApp(debugShowCheckedModeBanner: false, home: Homepage());
+        return MaterialApp(debugShowCheckedModeBanner: false, home: MyPage());
       },
     );
   }

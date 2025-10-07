@@ -1,11 +1,30 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:medicare/core/constants/app_colors.dart';
 import 'package:google_fonts/google_fonts.dart'; // You can use Google Fonts if you want, but here we use RobotoFlex directly
 import 'package:medicare/core/constants/app_spacing.dart';
 import 'package:medicare/core/constants/app_text.dart';
+import 'package:medicare/screens/chatBot_screen.dart';
 
-class SplashScreen extends StatelessWidget {
+class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
+
+  @override
+  State<SplashScreen> createState() => _SplashScreenState();
+}
+
+class _SplashScreenState extends State<SplashScreen> {
+  @override
+  void initState() {
+    super.initState();
+    Timer(Duration(seconds: 2), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => ChatBotScreen()),
+      );
+    });
+  }
 
   @override
   Widget build(BuildContext context) {

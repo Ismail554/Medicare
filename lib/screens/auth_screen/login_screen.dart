@@ -122,11 +122,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 AppSpacing.h32,
                 SocialLoginButton(
                   onPressed: () {},
-                  leading: Image(
-                    image: AssetImage('assets/images/google.png'),
-                    width: 24,
-                    height: 24,
-                  ),
+                  leading: Icon(Icons.g_translate, size: 24),
                   label: 'Log in with Google',
                 ),
                 AppSpacing.h20,
